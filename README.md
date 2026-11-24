@@ -1,56 +1,103 @@
 <div align="center">
 
-<img src="docs/banner.webp" alt="Limbo. Feed it your browsing history.">
+<img src="docs/demo.webp" width="380" alt="Limbo draining a page of browsing history, imploding, and ending on the word Gone">
 
-<br>
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="docs/h-limbo-dark.webp">
+<img src="docs/h-limbo-light.webp" height="150" alt="Limbo">
+</picture>
+
+**A Chrome extension that eats your browsing history.**<br>
+One click to feed it. A few seconds to change your mind.
 
 [![CI](https://github.com/Hiroyki/limbo/actions/workflows/ci.yml/badge.svg)](https://github.com/Hiroyki/limbo/actions/workflows/ci.yml)
-![Chrome 127 or later](https://img.shields.io/badge/Chrome-127%2B-0b0a0a?logo=googlechrome&logoColor=white)
-![Manifest V3](https://img.shields.io/badge/Manifest-V3-0b0a0a)
-![No dependencies](https://img.shields.io/badge/dependencies-none-0b0a0a)
+![Chrome 127 or later](https://img.shields.io/badge/Chrome-127%2B-171413?logo=googlechrome&logoColor=white)
+![Manifest V3](https://img.shields.io/badge/Manifest-V3-171413)
+![No dependencies](https://img.shields.io/badge/dependencies-none-171413)
 ![No data collected](https://img.shields.io/badge/data_collected-none-e03a24)
-![English and Indonesian](https://img.shields.io/badge/languages-EN%20%7C%20ID-0b0a0a)
 
-### 🕳️ One click. Your history is pulled into the dark.
-
-It can erase your history. It **cannot read** it.
-
-[🚀 Install](#-install) · [🍴 Feed it](#-feed-it) · [🔥 Watch it grow](#-watch-it-grow) · [🔒 Limbo Lock](#-limbo-lock) · [🔐 Privacy](#-privacy-and-permissions) · [🔧 Development](#-development)
+[How to install](#install) &nbsp;&middot;&nbsp; [Feed it](#feed) &nbsp;&middot;&nbsp; [Watch it grow](#grow) &nbsp;&middot;&nbsp; [Limbo Lock](#lock) &nbsp;&middot;&nbsp; [What it can see](#trust) &nbsp;&middot;&nbsp; [Take it apart](#build)
 
 <br>
 
-<table>
-<tr>
-<td align="center"><img src="docs/demo.webp" width="330" alt="Limbo draining a page of history, imploding, and ending on the word Gone"><br><b>Let it feed</b></td>
-<td align="center"><img src="docs/undo.webp" width="330" alt="Limbo coughing the page back up and sinking away, ending on the word Spared"><br><b>Change your mind</b></td>
-</tr>
-</table>
+<img src="docs/card-eats.webp" width="49%" alt="Eats history: everything, an hour, a day, a week">
+<img src="docs/card-undo.webp" width="49%" alt="Gives it back: up to ten seconds to change your mind">
+<img src="docs/card-blind.webp" width="49%" alt="Reads nothing: no permission to read, nothing sent">
+<img src="docs/card-lock.webp" width="49%" alt="Guards: the browser, one tab, or a whole site">
+<img src="docs/card-eyes.webp" width="49%" alt="Watches: its eyes follow your cursor">
+<img src="docs/card-grow.webp" width="49%" alt="Grows: five levels, and something rare">
 
 </div>
 
-## ✨ What it does
+<br>
 
-| | |
-|---|---|
-| 🍴 **Eats history** | Everything, the last hour, today, or the last 7 days |
-| ↩️ **Gives you time** | 2, 3, 5 or 10 seconds to undo, with a ring that counts down |
-| 🙈 **Reads nothing** | No `history` permission, no tracking, nothing sent anywhere |
-| 🔒 **Locks things** | The whole browser, one tab, or a site in every tab |
-| 👁️ **Watches you** | Its eyes follow the cursor, and shut while you type a passcode |
-| 🔥 **Grows** | Five levels, fed one erase at a time |
-| 🔊 **Makes noise** | Optional sound, synthesised on the spot, with no audio files |
-| 🌏 **Speaks** | English and Indonesian, following Chrome's language |
+<h2 align="center" id="install">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="docs/h-install-dark.webp">
+<img src="docs/h-install-light.webp" height="54" alt="How to install">
+</picture>
+</h2>
 
-## 🚀 Install
+<div align="center">
+<img src="docs/install.webp" width="760" alt="Four steps: download the ZIP, open chrome://extensions and turn on Developer mode, load the unpacked folder, and meet Limbo">
+</div>
 
-1. **Download** this repository (**Code**, then **Download ZIP**) and unzip it, or clone it.
-2. Open `chrome://extensions` and turn on **Developer mode**.
-3. Choose **Load unpacked** and select the folder that contains `manifest.json`.
-4. Click the 🧩 puzzle piece next to the address bar and **pin** Limbo.
+1. **Download.** On this page choose **Code**, then **Download ZIP**, and unzip it somewhere it can stay.
+2. **Open.** Go to `chrome://extensions` and turn on **Developer mode** in the top right corner.
+3. **Load.** Choose **Load unpacked** and select the folder that contains `manifest.json`.
+4. **Meet.** A welcome page opens. Click the puzzle piece next to the address bar and pin Limbo.
 
 Chrome 127 or later is required. The welcome page has a preview that erases nothing, so you can meet Limbo first.
 
-## 🍴 Feed it
+<details>
+<summary><b>Install with Git</b></summary>
+<br>
+
+```sh
+git clone https://github.com/Hiroyki/limbo.git
+```
+
+Then continue from step 2 and select the `limbo` folder.
+
+</details>
+
+<details>
+<summary><b>Update</b></summary>
+<br>
+
+Replace the files in the same folder, or run `git pull`. Then press the reload arrow on Limbo's card in `chrome://extensions`. Your settings, level and passcode stay.
+
+</details>
+
+<details>
+<summary><b>It does not load</b></summary>
+<br>
+
+| What you see | What to do |
+|---|---|
+| Manifest file is missing or unreadable | The ZIP holds a folder inside a folder. Select the inner one, which contains `manifest.json` |
+| Limbo disappears after a while | Chrome reads Limbo from its folder every time. Do not move or delete the folder |
+| A shortcut does nothing | Another extension may use it. Change it at `chrome://extensions/shortcuts` |
+| Two Limbos | Remove one of them in `chrome://extensions` |
+
+</details>
+
+<details>
+<summary><b>Remove</b></summary>
+<br>
+
+Press **Remove** on Limbo's card in `chrome://extensions`. This also deletes everything it stored.
+
+</details>
+
+<br>
+
+<h2 align="center" id="feed">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="docs/h-feed-dark.webp">
+<img src="docs/h-feed-light.webp" height="54" alt="Feed it">
+</picture>
+</h2>
 
 | To | Do this |
 |---|---|
@@ -60,16 +107,18 @@ Chrome 127 or later is required. The welcome page has a preview that erases noth
 | See the animation without erasing | **Settings**, then **Preview animation** |
 | Change anything else | Right-click the icon, then **Settings and preview** |
 
-Limbo erases nothing if it cannot show itself and its undo button.
+Limbo erases nothing if it cannot show itself and its undo button. The cache, the download list, cookies and erasing at startup are all off until you turn them on.
 
+<details>
+<summary><b>The settings</b></summary>
+<br>
 <div align="center">
 <img src="docs/settings.webp" width="760" alt="The settings page: what a click erases, the time to undo, and what goes along with history">
 </div>
-
-Settings also cover the cache, the download list, cookies and site data, erasing when Chrome starts, sound, size and position. All of the extra erasing is off until you turn it on.
+</details>
 
 <details>
-<summary>🔎 <b>What about my Google searches?</b></summary>
+<summary><b>What about my Google searches?</b></summary>
 <br>
 
 Searches saved in a Google account are stored by Google, not by Chrome, so Limbo cannot erase them. **Settings**, then **Google search history**, opens Google's own pages for deleting them or setting up auto-delete.
@@ -77,66 +126,82 @@ Searches saved in a Google account are stored by Google, not by Chrome, so Limbo
 </details>
 
 <details>
-<summary>🌑 <b>Why is it a small square on some pages?</b></summary>
+<summary><b>Why is it a small square on some pages?</b></summary>
 <br>
 
 Chrome's own pages, such as New Tab and the Web Store, do not allow extensions to draw on them. There Limbo opens in a small popup instead of a circle on the page.
 
 </details>
 
-## 🔥 Watch it grow
+<br>
+
+<h2 align="center" id="grow">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="docs/h-grow-dark.webp">
+<img src="docs/h-grow-light.webp" height="54" alt="Watch it grow">
+</picture>
+</h2>
+
+<div align="center">
 
 Every erase is a meal. The fire reddens, the embers multiply, and from Inferno on its eyes begin to smoke.
 
-<div align="center">
-<img src="docs/levels.webp" width="860" alt="Five levels: Whisper at the beginning, Ember at 5 meals, Wraith at 15, Inferno at 40, Abyss at 100">
+<img src="docs/levels.webp" width="100%" alt="Five levels: Whisper where it starts, Ember at 5 meals, Wraith at 15, Inferno at 40, Abyss at 100">
+
 </div>
 
 <details>
-<summary>🌕 <b>Something rare</b> (spoiler)</summary>
+<summary><b>Something rare</b> (spoiler)</summary>
 <br>
 
 From Ember on, about one appearance in ten is a blood moon.
 
-<div align="center">
-<img src="docs/blood-moon.webp" width="520" alt="Limbo with all of its fire turned red">
-</div>
+<img src="docs/blood-moon.webp" width="100%" alt="Limbo with all of its fire turned red">
 
 </details>
 
-## 🔒 Limbo Lock
+<br>
 
-One passcode for the browser, for single tabs, or for sites. Set it in **Settings**, under the **Limbo Lock** tab, and keep the recovery code: it is shown once.
+<h2 align="center" id="lock">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="docs/h-lock-dark.webp">
+<img src="docs/h-lock-light.webp" height="54" alt="Limbo Lock">
+</picture>
+</h2>
 
 <div align="center">
-<img src="docs/lock-faces.webp" width="860" alt="The lock screen in three moods: watching, looking away while a passcode is typed, and red after a wrong one">
+
+One passcode for the browser, for single tabs, or for sites.<br>
+Limbo watches, looks away while you type, and does not take wrong answers well.
+
+<img src="docs/lock.webp" width="760" alt="The lock screen: the eyes follow the cursor, shut while a passcode is typed, turn red after a wrong one, and open for the right one">
+
 </div>
 
 | Lock | How | What happens |
 |---|---|---|
-| 🖥️ **The browser** | Right-click the icon, then **Lock browser**, or <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>K</kbd> | Every window is hidden behind a lock screen |
-| 📄 **One tab** | Right-click a page, then **Lock this tab only**, or <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>J</kbd> | The tab shows the lock, and returns to the same page afterwards |
-| 🌐 **A site** | Right-click a page, then **Lock this site (all tabs)** | Every tab of the site asks for the passcode, and one passcode opens them all |
+| **The browser** | Right-click the icon, then **Lock browser**, or <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>K</kbd> | Every window is hidden behind a lock screen |
+| **One tab** | Right-click a page, then **Lock this tab only**, or <kbd>Alt</kbd> <kbd>Shift</kbd> <kbd>J</kbd> | The tab shows the lock, and returns to the same page afterwards |
+| **A site** | Right-click a page, then **Lock this site (all tabs)** | Every tab of the site asks for the passcode, and one passcode opens them all |
 
-- ⏰ The browser also locks when Chrome starts, which can be turned off, and after 5, 15 or 30 minutes away if you choose so.
-- 🧱 After five wrong passcodes there is a wait of 30 seconds, which doubles up to 10 minutes.
-- 🔁 Pressing Back, typing another address, reloading or duplicating a locked tab leads to the lock again.
+Set the passcode in **Settings**, under the **Limbo Lock** tab, and keep the recovery code: it is shown once. The browser also locks when Chrome starts, which can be turned off, and after 5, 15 or 30 minutes away if you choose so. After five wrong passcodes there is a wait of 30 seconds, which doubles up to 10 minutes.
+
+> [!WARNING]
+> Limbo Lock keeps out people who pick up your computer. It is not encryption. Someone who knows how can disable extensions, use another Chrome profile, or read the profile folder on disk. For that, lock the computer itself.
 
 <details>
-<summary>⚙️ <b>The Limbo Lock settings</b></summary>
+<summary><b>The Limbo Lock settings</b></summary>
 <br>
 <div align="center">
 <img src="docs/settings-lock.webp" width="760" alt="The Limbo Lock tab of the settings page">
 </div>
 </details>
 
-> [!WARNING]
-> **What it does not protect against.** Limbo Lock keeps out people who pick up your computer. It is not encryption. Someone who knows how can disable extensions, use another Chrome profile, or read the profile folder on disk. For that, lock the computer itself.
-
 <details>
-<summary>📌 <b>Good to know</b></summary>
+<summary><b>Good to know</b></summary>
 <br>
 
+- Pressing Back, typing another address, reloading or duplicating a locked tab leads to the lock again.
 - Incognito windows are hidden by the browser lock only after you turn on **Allow in Incognito** for Limbo. Tab and site locks do not work in Incognito.
 - When Chrome starts, its window can be visible for a moment before the lock appears, because extensions start after the window does.
 - Unsaved work on a page can be lost when its tab is locked.
@@ -144,9 +209,25 @@ One passcode for the browser, for single tabs, or for sites. Set it in **Setting
 
 </details>
 
-## 🔐 Privacy and permissions
+<br>
 
-Limbo collects nothing and sends nothing. The full text is in the [privacy policy](store/privacy-policy.md).
+<h2 align="center" id="trust">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="docs/h-trust-dark.webp">
+<img src="docs/h-trust-light.webp" height="54" alt="What it can see">
+</picture>
+</h2>
+
+<div align="center">
+
+**Not your history.** Limbo asks Chrome to erase it, without the permission to read it.<br>
+It collects nothing and sends nothing. The full text is in the [privacy policy](store/privacy-policy.md).
+
+</div>
+
+<details>
+<summary><b>Every permission, and why</b></summary>
+<br>
 
 | Permission | Why |
 |---|---|
@@ -158,11 +239,20 @@ Limbo collects nothing and sends nothing. The full text is in the [privacy polic
 | `idle` | Lock after the time away you chose |
 | Access to a site, optional | Asked for one site at a time, when you lock that site, so Limbo can tell when it is opened |
 
-🔑 Passcodes and recovery codes are stored as salted PBKDF2-SHA-256 hashes with 600,000 rounds ([lock.js](lock.js)).
+Passcodes and recovery codes are stored as salted PBKDF2-SHA-256 hashes with 600,000 rounds ([lock.js](lock.js)).
 
-## 🔧 Development
+</details>
 
-No framework and no build step: edit, then reload Limbo in `chrome://extensions`.
+<br>
+
+<h2 align="center" id="build">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="docs/h-build-dark.webp">
+<img src="docs/h-build-light.webp" height="54" alt="Take it apart">
+</picture>
+</h2>
+
+No framework and no build step: edit, then reload Limbo in `chrome://extensions`. Its text is in English and Indonesian, and its sounds are synthesised, with no audio files.
 
 ```mermaid
 flowchart LR
@@ -173,6 +263,15 @@ flowchart LR
     job -->|time is up| erase[browsingData] --> gone([Gone])
     job -->|Limbo never appeared| spared
 ```
+
+```sh
+node tests/smoke.mjs      # test, in a throwaway Chrome profile
+python tools/build.py     # pack store/limbo-<version>.zip
+```
+
+<details>
+<summary><b>Where things are</b></summary>
+<br>
 
 | Path | Holds |
 |---|---|
@@ -185,27 +284,26 @@ flowchart LR
 | [_locales](_locales) | English and Indonesian text |
 | [tests](tests), [tools](tools), [store](store) | Smoke test, packing script, Web Store text and images |
 
-**🧪 Test.** Needs Node 22 or later and Chrome. Limbo is loaded into a throwaway profile, so your own history is not touched. Set `CHROME` to use another Chrome binary, or `HEADFUL=1` to watch.
+</details>
 
-```sh
-node tests/smoke.mjs
-```
+<details>
+<summary><b>Testing, packing and translating</b></summary>
+<br>
 
-**📦 Pack.** Checks that both languages define the same messages and writes `store/limbo-<version>.zip`. The steps for publishing are in [store/listing.md](store/listing.md).
+The test needs Node 22 or later and Chrome. It loads Limbo into a throwaway profile, so your own history is not touched. Set `CHROME` to use another Chrome binary, or `HEADFUL=1` to watch.
 
-```sh
-python tools/build.py
-```
+Packing checks that both languages define the same messages. The steps for publishing are in [store/listing.md](store/listing.md).
 
-**🌏 Translate.** Copy `_locales/en` to a new [locale code](https://developer.chrome.com/docs/extensions/reference/api/i18n#locales), translate the `message` values, and keep every key. Then add the code in [ui/i18n.js](ui/i18n.js), which sets the language of the pages.
+To translate, copy `_locales/en` to a new [locale code](https://developer.chrome.com/docs/extensions/reference/api/i18n#locales), translate the `message` values, and keep every key. Then add the code in [ui/i18n.js](ui/i18n.js), which sets the language of the pages.
 
-## 📜 License
+</details>
 
-The code and artwork have no open-source license. The Pirata One font is under the [SIL Open Font License](ui/fonts/OFL-PirataOne.txt).
+<br>
 
 <div align="center">
-<br>
-<img src="icons/icon128.png" width="72" alt="">
-<br>
-<sub>It is watching your cursor.</sub>
+
+<img src="icons/icon128.png" width="64" alt="">
+
+<sub>The code and artwork have no open-source license. Pirata One is under the <a href="ui/fonts/OFL-PirataOne.txt">SIL Open Font License</a>.</sub>
+
 </div>
