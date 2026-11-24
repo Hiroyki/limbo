@@ -13,7 +13,7 @@ One click to feed it. A few seconds to change your mind.
 [![CI](https://github.com/Hiroyki/limbo/actions/workflows/ci.yml/badge.svg)](https://github.com/Hiroyki/limbo/actions/workflows/ci.yml)
 ![Chrome 127 or later](https://img.shields.io/badge/Chrome-127%2B-171413?logo=googlechrome&logoColor=white)
 [![Latest release](https://img.shields.io/github/v/release/Hiroyki/limbo?color=171413&label=release)](https://github.com/Hiroyki/limbo/releases/latest)
-[![Stars](https://img.shields.io/github/stars/Hiroyki/limbo?color=e03a24&label=meals%20of%20stars)](https://github.com/Hiroyki/limbo/stargazers)
+[![Stars](https://img.shields.io/github/stars/Hiroyki/limbo?color=e03a24&label=stars)](https://github.com/Hiroyki/limbo/stargazers)
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-171413)
 ![No dependencies](https://img.shields.io/badge/dependencies-none-171413)
 ![No data collected](https://img.shields.io/badge/data_collected-none-e03a24)
