@@ -12,11 +12,13 @@ One click to feed it. A few seconds to change your mind.
 
 [![CI](https://github.com/Hiroyki/limbo/actions/workflows/ci.yml/badge.svg)](https://github.com/Hiroyki/limbo/actions/workflows/ci.yml)
 ![Chrome 127 or later](https://img.shields.io/badge/Chrome-127%2B-171413?logo=googlechrome&logoColor=white)
+[![Latest release](https://img.shields.io/github/v/release/Hiroyki/limbo?color=171413&label=release)](https://github.com/Hiroyki/limbo/releases/latest)
+[![Stars](https://img.shields.io/github/stars/Hiroyki/limbo?color=e03a24&label=meals%20of%20stars)](https://github.com/Hiroyki/limbo/stargazers)
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-171413)
 ![No dependencies](https://img.shields.io/badge/dependencies-none-171413)
 ![No data collected](https://img.shields.io/badge/data_collected-none-e03a24)
 
-[How to install](#install) &nbsp;&middot;&nbsp; [Feed it](#feed) &nbsp;&middot;&nbsp; [Watch it grow](#grow) &nbsp;&middot;&nbsp; [Limbo Lock](#lock) &nbsp;&middot;&nbsp; [What it can see](#trust) &nbsp;&middot;&nbsp; [Take it apart](#build)
+[Will you feed it?](#choose) &nbsp;&middot;&nbsp; [How to install](#install) &nbsp;&middot;&nbsp; [Feed it](#feed) &nbsp;&middot;&nbsp; [Watch it grow](#grow) &nbsp;&middot;&nbsp; [Its moods](#moods) &nbsp;&middot;&nbsp; [Limbo Lock](#lock) &nbsp;&middot;&nbsp; [What it can see](#trust) &nbsp;&middot;&nbsp; [Take it apart](#build)
 
 <br>
 
@@ -31,6 +33,52 @@ One click to feed it. A few seconds to change your mind.
 
 <br>
 
+<h2 align="center" id="choose">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="docs/h-choose-dark.webp">
+<img src="docs/h-choose-light.webp" height="54" alt="Will you feed it?">
+</picture>
+</h2>
+
+<div align="center">
+
+*A page of everywhere you have been lies open. Something is standing in the middle of it.*<br>
+*It looks up.*
+
+</div>
+
+<details>
+<summary><b>Feed it.</b></summary>
+<br>
+<div align="center">
+<img src="docs/demo.webp" width="340" alt="The page drains into Limbo, Limbo drains into the dark, and one word remains: Gone">
+<br>
+<i>It is gone. Chrome has erased it, and nothing brings it back.</i>
+</div>
+</details>
+
+<details>
+<summary><b>Wait. Not yet.</b></summary>
+<br>
+<div align="center">
+<img src="docs/undo.webp" width="340" alt="Limbo coughs the page back up, sinks into the paper, and leaves one word: Spared">
+<br>
+<i>It coughs the page back up. Not a line is missing.</i>
+</div>
+</details>
+
+<details>
+<summary><b>Poke it.</b></summary>
+<br>
+<div align="center">
+<img src="docs/card-eyes.webp" width="480" alt="Limbo's eyes following a cursor around">
+<br>
+<i>It blinks, and the smoke ripples. It had been watching your cursor the whole time.</i>
+</div>
+</details>
+
+<div align="center"><img src="docs/embers.webp" width="100%" alt=""></div>
+
 <h2 align="center" id="install">
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="docs/h-install-dark.webp">
@@ -42,7 +90,7 @@ One click to feed it. A few seconds to change your mind.
 <img src="docs/install.webp" width="760" alt="Four steps: download the ZIP, open chrome://extensions and turn on Developer mode, load the unpacked folder, and meet Limbo">
 </div>
 
-1. **Download.** On this page choose **Code**, then **Download ZIP**, and unzip it somewhere it can stay.
+1. **Download** the ZIP from the [latest release](https://github.com/Hiroyki/limbo/releases/latest), or choose **Code**, then **Download ZIP** on this page. Unzip it somewhere it can stay.
 2. **Open.** Go to `chrome://extensions` and turn on **Developer mode** in the top right corner.
 3. **Load.** Choose **Load unpacked** and select the folder that contains `manifest.json`.
 4. **Meet.** A welcome page opens. Click the puzzle piece next to the address bar and pin Limbo.
@@ -75,7 +123,7 @@ Replace the files in the same folder, or run `git pull`. Then press the reload a
 
 | What you see | What to do |
 |---|---|
-| Manifest file is missing or unreadable | The ZIP holds a folder inside a folder. Select the inner one, which contains `manifest.json` |
+| Manifest file is missing or unreadable | You selected the folder around it. Select the one that contains `manifest.json` |
 | Limbo disappears after a while | Chrome reads Limbo from its folder every time. Do not move or delete the folder |
 | A shortcut does nothing | Another extension may use it. Change it at `chrome://extensions/shortcuts` |
 | Two Limbos | Remove one of them in `chrome://extensions` |
@@ -90,7 +138,7 @@ Press **Remove** on Limbo's card in `chrome://extensions`. This also deletes eve
 
 </details>
 
-<br>
+<div align="center"><img src="docs/embers.webp" width="100%" alt=""></div>
 
 <h2 align="center" id="feed">
 <picture>
@@ -98,6 +146,10 @@ Press **Remove** on Limbo's card in `chrome://extensions`. This also deletes eve
 <img src="docs/h-feed-light.webp" height="54" alt="Feed it">
 </picture>
 </h2>
+<div align="center">
+<img src="docs/keys.webp" width="100%" alt="Three shortcuts: Alt Shift L erases, Alt Shift K locks the browser, Alt Shift J locks a tab">
+</div>
+
 
 | To | Do this |
 |---|---|
@@ -107,7 +159,17 @@ Press **Remove** on Limbo's card in `chrome://extensions`. This also deletes eve
 | See the animation without erasing | **Settings**, then **Preview animation** |
 | Change anything else | Right-click the icon, then **Settings and preview** |
 
-Limbo erases nothing if it cannot show itself and its undo button. The cache, the download list, cookies and erasing at startup are all off until you turn them on.
+Limbo erases nothing if it cannot show itself and its undo button.
+
+#### On the menu
+
+| Dish | Served |
+|---|---|
+| Browsing history | Always: all of it, the last hour, today, or the last 7 days |
+| Cache | If you tick it |
+| Download list | If you tick it. The files stay |
+| Cookies and site data | If you tick it. Signs you out of most sites |
+| Passwords, bookmarks, autofill | Never |
 
 <details>
 <summary><b>The settings</b></summary>
@@ -133,7 +195,7 @@ Chrome's own pages, such as New Tab and the Web Store, do not allow extensions t
 
 </details>
 
-<br>
+<div align="center"><img src="docs/embers.webp" width="100%" alt=""></div>
 
 <h2 align="center" id="grow">
 <picture>
@@ -150,17 +212,23 @@ Every erase is a meal. The fire reddens, the embers multiply, and from Inferno o
 
 </div>
 
-<details>
-<summary><b>Something rare</b> (spoiler)</summary>
-<br>
+<div align="center"><img src="docs/embers.webp" width="100%" alt=""></div>
 
-From Ember on, about one appearance in ten is a blood moon.
+<h2 align="center" id="moods">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="docs/h-moods-dark.webp">
+<img src="docs/h-moods-light.webp" height="54" alt="Its moods">
+</picture>
+</h2>
 
-<img src="docs/blood-moon.webp" width="100%" alt="Limbo with all of its fire turned red">
+<div align="center">
+<img src="docs/moods.webp" width="100%" alt="Eight moods: waiting, curious, almost asleep, not looking, hungry, startled, furious, and blood moon">
 
-</details>
+Most of these you will meet. The last one is rare: from Ember on, about one appearance in ten.
 
-<br>
+</div>
+
+<div align="center"><img src="docs/embers.webp" width="100%" alt=""></div>
 
 <h2 align="center" id="lock">
 <picture>
@@ -209,7 +277,7 @@ Set the passcode in **Settings**, under the **Limbo Lock** tab, and keep the rec
 
 </details>
 
-<br>
+<div align="center"><img src="docs/embers.webp" width="100%" alt=""></div>
 
 <h2 align="center" id="trust">
 <picture>
@@ -243,7 +311,7 @@ Passcodes and recovery codes are stored as salted PBKDF2-SHA-256 hashes with 600
 
 </details>
 
-<br>
+<div align="center"><img src="docs/embers.webp" width="100%" alt=""></div>
 
 <h2 align="center" id="build">
 <picture>
@@ -303,6 +371,8 @@ To translate, copy `_locales/en` to a new [locale code](https://developer.chrome
 <div align="center">
 
 <img src="icons/icon128.png" width="64" alt="">
+
+<b>Still here?</b> It noticed. <a href="https://github.com/Hiroyki/limbo/stargazers">Leave it a star</a>, or <a href="https://github.com/Hiroyki/limbo/issues">tell it what is wrong</a>.
 
 <sub>The code and artwork have no open-source license. Pirata One is under the <a href="ui/fonts/OFL-PirataOne.txt">SIL Open Font License</a>.</sub>
 
