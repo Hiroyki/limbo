@@ -1,0 +1,53 @@
+.welcome {
+  max-width: 1040px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 64px;
+}
+
+.meet {
+  display: grid;
+  grid-template-columns: minmax(0, 440px) minmax(0, 1fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.meet #hero { width: min(100%, max(220px, 100vh - 230px)); margin: 0 auto; }
+
+.meet h1 { margin: 0; }
+
+:root .meet h1 { font-size: clamp(44px, 6vw, 72px); }
+
+.lead {
+  margin: 14px 0 32px;
+  max-width: 34ch;
+  font-size: 19px;
+  color: var(--smoke);
+  text-wrap: balance;
+}
+
+.meet .buttons { margin: 28px 0 0; }
+.meet #preview { margin: 0; }
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  margin: 0;
+  padding-top: 40px;
+  border-top: 1px solid var(--line);
+}
+
+.facts dt { font: 400 22px/1.2 var(--display); }
+.facts dd { margin: 8px 0 0; color: var(--smoke); text-wrap: pretty; }
+
+@media (max-width: 860px) {
+  .welcome { padding: 24px 20px 48px; gap: 40px; }
+  .meet { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .meet #hero { max-width: 320px; margin: 0 auto; }
+  .facts { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+}

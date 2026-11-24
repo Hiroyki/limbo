@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-t="welcomeTitle">Meet Limbo</title>
+    <link rel="icon" href="../icons/icon32.png">
+    <link rel="stylesheet" href="options.css">
+    <link rel="stylesheet" href="welcome.css">
+  </head>
+  <body>
+    <main class="welcome">
+      <div class="meet">
+        <div id="hero"></div>
+        <div>
+          <h1 data-t="welcomeTitle"></h1>
+          <p class="lead" data-t="welcomeLead"></p>
+          <div class="buttons">
+            <button id="preview" class="main" type="button" data-t="welcomeTry"></button>
+            <button id="done" type="button" data-t="welcomeDone"></button>
+            <button id="lock" type="button" data-t="welcomeLock"></button>
+          </div>
+        </div>
+      </div>
+      <dl class="facts">
+        <div><dt data-t="welcomePin"></dt><dd data-t="welcomePinNote"></dd></div>
+        <div><dt data-t="welcomeUndo"></dt><dd data-t="welcomeUndoNote"></dd></div>
+        <div><dt data-t="welcomePrivacy"></dt><dd data-t="welcomePrivacyNote"></dd></div>
+      </dl>
+    </main>
+
+    <script src="../settings.js"></script>
+    <script src="i18n.js"></script>
+    <script src="shader.js"></script>
+    <script src="portrait.js"></script>
+    <script src="welcome.js"></script>
+  </body>
+</html>

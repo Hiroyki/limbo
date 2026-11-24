@@ -1,0 +1,407 @@
+{
+  "appName": {
+    "message": "Limbo: History Eater"
+  },
+  "appDesc": {
+    "message": "Feed your browsing history to Limbo. One click, time to undo, and no permission to read it."
+  },
+  "actionTitle": {
+    "message": "Limbo: click to erase, right-click to choose"
+  },
+  "rangeAll": {
+    "message": "Everything"
+  },
+  "rangeHour": {
+    "message": "Last hour"
+  },
+  "rangeToday": {
+    "message": "Today"
+  },
+  "rangeWeek": {
+    "message": "Last 7 days"
+  },
+  "menuErase": {
+    "message": "Erase"
+  },
+  "menuGoogle": {
+    "message": "Google search history"
+  },
+  "menuSettings": {
+    "message": "Settings and preview"
+  },
+  "doneAll": {
+    "message": "Browsing history erased"
+  },
+  "doneMore": {
+    "message": "History & more erased"
+  },
+  "doneRange": {
+    "message": "$1 erased"
+  },
+  "donePreview": {
+    "message": "Just a preview"
+  },
+  "nothingErased": {
+    "message": "Nothing was erased"
+  },
+  "blocked": {
+    "message": "Chrome blocked it"
+  },
+  "became": {
+    "message": "Limbo became $1"
+  },
+  "clickToUndo": {
+    "message": "Click to undo"
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "justPreview": {
+    "message": "A preview never erases anything."
+  },
+  "previewButton": {
+    "message": "Preview animation"
+  },
+  "growth": {
+    "message": "Growth"
+  },
+  "meals": {
+    "message": "Meals: $1. $2 more to become $3."
+  },
+  "mealsFull": {
+    "message": "Meals: $1. Fully grown."
+  },
+  "optionsTitle": {
+    "message": "Limbo settings"
+  },
+  "clicking": {
+    "message": "Clicking the icon"
+  },
+  "erases": {
+    "message": "Erases"
+  },
+  "undoTime": {
+    "message": "Time to undo"
+  },
+  "seconds": {
+    "message": "$1 seconds"
+  },
+  "along": {
+    "message": "Along with history"
+  },
+  "cache": {
+    "message": "Cache"
+  },
+  "cacheNote": {
+    "message": "Stored images and files. Sites load slower the first time after."
+  },
+  "downloads": {
+    "message": "Download list"
+  },
+  "downloadsNote": {
+    "message": "Only the list. Your downloaded files stay."
+  },
+  "cookies": {
+    "message": "Cookies and site data"
+  },
+  "cookiesNote": {
+    "message": "Signs you out of most sites."
+  },
+  "starts": {
+    "message": "When Chrome starts"
+  },
+  "auto": {
+    "message": "Erase automatically"
+  },
+  "autoNote": {
+    "message": "Happens quietly, with no undo. Includes everything ticked above."
+  },
+  "place": {
+    "message": "Placement"
+  },
+  "position": {
+    "message": "Position"
+  },
+  "size": {
+    "message": "Size"
+  },
+  "small": {
+    "message": "Small"
+  },
+  "medium": {
+    "message": "Medium"
+  },
+  "large": {
+    "message": "Large"
+  },
+  "tl": {
+    "message": "Top left"
+  },
+  "tr": {
+    "message": "Top right"
+  },
+  "center": {
+    "message": "Center"
+  },
+  "bl": {
+    "message": "Bottom left"
+  },
+  "br": {
+    "message": "Bottom right"
+  },
+  "sound": {
+    "message": "Sound"
+  },
+  "playSound": {
+    "message": "Play sound"
+  },
+  "soundNote": {
+    "message": "A rising drone, a breath of silence, then a blow."
+  },
+  "volume": {
+    "message": "Volume"
+  },
+  "google": {
+    "message": "Google search history"
+  },
+  "googleNote": {
+    "message": "Searches saved in your Google account are kept by Google, not by Chrome. Only Google's own page can delete them, so Limbo takes you there: choose Delete, then Delete all time."
+  },
+  "googleDelete": {
+    "message": "Delete Google searches"
+  },
+  "googleAuto": {
+    "message": "Set up auto-delete"
+  },
+  "googleAfter": {
+    "message": "Take me there after each erase"
+  },
+  "googleAfterNote": {
+    "message": "Opens Google's page once Limbo is done."
+  },
+  "shortcut": {
+    "message": "Shortcut"
+  },
+  "changeShortcut": {
+    "message": "Change shortcut"
+  },
+  "notSet": {
+    "message": "Not set"
+  },
+  "saved": {
+    "message": "Saved"
+  },
+  "notSaved": {
+    "message": "Could not save"
+  },
+  "welcomeTitle": {
+    "message": "Meet Limbo"
+  },
+  "welcomeLead": {
+    "message": "It eats your browsing history whenever you click its icon."
+  },
+  "welcomePin": {
+    "message": "Keep it close"
+  },
+  "welcomePinNote": {
+    "message": "Click the puzzle piece next to Chrome's address bar, then the pin beside Limbo."
+  },
+  "welcomeUndo": {
+    "message": "Changed your mind?"
+  },
+  "welcomeUndoNote": {
+    "message": "Click Limbo or press Esc while the ring is still running, and nothing is erased."
+  },
+  "welcomePrivacy": {
+    "message": "Nothing leaves your computer"
+  },
+  "welcomePrivacyNote": {
+    "message": "Limbo has no permission to read your history and sends nothing anywhere."
+  },
+  "welcomeTry": {
+    "message": "Try it without erasing"
+  },
+  "welcomeDone": {
+    "message": "All settings"
+  },
+  "menuLock": {
+    "message": "Lock browser"
+  },
+  "locked": {
+    "message": "Locked"
+  },
+  "welcomeBack": {
+    "message": "Welcome back"
+  },
+  "passcode": {
+    "message": "Passcode"
+  },
+  "unlock": {
+    "message": "Unlock"
+  },
+  "wrong": {
+    "message": "Wrong passcode. Forgot it? Enter your recovery code."
+  },
+  "tooMany": {
+    "message": "Too many tries. Wait $1 s."
+  },
+  "oops": {
+    "message": "Something went wrong. Try again."
+  },
+  "recovered": {
+    "message": "Recovery code accepted. The lock is now off."
+  },
+  "isOn": {
+    "message": "Limbo is on guard"
+  },
+  "isOff": {
+    "message": "Set a passcode to begin"
+  },
+  "lock": {
+    "message": "Browser lock"
+  },
+  "lockNote": {
+    "message": "Hides every Chrome window until you enter your passcode. It stops people who pick up your computer, but not someone with the skills to get around an extension."
+  },
+  "repeat": {
+    "message": "Repeat passcode"
+  },
+  "turnOn": {
+    "message": "Turn on lock"
+  },
+  "turnOff": {
+    "message": "Turn off lock"
+  },
+  "saveCode": {
+    "message": "Save this recovery code."
+  },
+  "saveCodeNote": {
+    "message": "It is the way back in if you forget your passcode, and it is shown only once."
+  },
+  "copy": {
+    "message": "Copy code"
+  },
+  "savedIt": {
+    "message": "I saved it"
+  },
+  "copied": {
+    "message": "Copied."
+  },
+  "notCopied": {
+    "message": "Could not copy. Write it down instead."
+  },
+  "lockNow": {
+    "message": "Lock now"
+  },
+  "onStart": {
+    "message": "Lock when Chrome starts"
+  },
+  "away": {
+    "message": "Lock when I'm away"
+  },
+  "never": {
+    "message": "Never"
+  },
+  "minutes": {
+    "message": "$1 minutes"
+  },
+  "mismatch": {
+    "message": "The two passcodes don't match."
+  },
+  "tooShort": {
+    "message": "Use at least 4 characters."
+  },
+  "nowOn": {
+    "message": "The lock is on."
+  },
+  "nowOff": {
+    "message": "The lock is off."
+  },
+  "wrongShort": {
+    "message": "Wrong passcode."
+  },
+  "unavailable": {
+    "message": "The lock is unavailable. Reload Limbo and try again."
+  },
+  "incognito": {
+    "message": "Incognito windows are not hidden"
+  },
+  "incognitoNote": {
+    "message": "Turn on \"Allow in Incognito\" for Limbo to hide them too."
+  },
+  "openDetails": {
+    "message": "Open extension details"
+  },
+  "rekey": {
+    "message": "Change passcode"
+  },
+  "currentPasscode": {
+    "message": "Current passcode"
+  },
+  "newPasscode": {
+    "message": "New passcode"
+  },
+  "rekeyed": {
+    "message": "Passcode changed. Your recovery code still works."
+  },
+  "gone": {
+    "message": "Gone"
+  },
+  "spared": {
+    "message": "Spared"
+  },
+  "failed": {
+    "message": "Failed"
+  },
+  "welcomeLock": {
+    "message": "Set up Limbo Lock"
+  },
+  "menuLockTab": {
+    "message": "Lock this tab only"
+  },
+  "menuLockSite": {
+    "message": "Lock this site (all tabs)"
+  },
+  "tabLocked": {
+    "message": "This tab is locked"
+  },
+  "tabs": {
+    "message": "Lock a tab"
+  },
+  "tabsNote": {
+    "message": "Right-click a page and choose Lock this tab only, or use the shortcut. Other tabs of the same site stay open. Unsaved work on that page may be lost."
+  },
+  "sites": {
+    "message": "Lock sites"
+  },
+  "sitesNote": {
+    "message": "Every tab of these sites asks for your passcode, and one passcode opens them all. Right-click a page and choose Lock this site, or add one here. Chrome will ask you to let Limbo see when you open it."
+  },
+  "siteLabel": {
+    "message": "Site address"
+  },
+  "siteAdd": {
+    "message": "Lock site"
+  },
+  "siteRemove": {
+    "message": "Remove"
+  },
+  "siteAllow": {
+    "message": "Allow"
+  },
+  "siteBad": {
+    "message": "Enter a site, like example.com."
+  },
+  "siteDenied": {
+    "message": "Chrome needs your permission to lock that site."
+  },
+  "siteAdded": {
+    "message": "$1 is locked."
+  },
+  "siteAgain": {
+    "message": "Ask again after"
+  },
+  "siteUntilClose": {
+    "message": "Chrome closes"
+  }
+}

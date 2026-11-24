@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title data-t="locked">Locked</title>
+    <link rel="icon" href="../icons/icon32.png">
+    <link rel="stylesheet" href="lock.css">
+  </head>
+  <body>
+    <div id="hero"></div>
+    <h1 id="title" data-t="locked">Locked</h1>
+    <form id="form" autocomplete="off">
+      <input id="passcode" type="password" data-t-label="passcode" data-t-hint="passcode"
+             autocomplete="off" spellcheck="false" maxlength="200" autofocus required>
+      <button id="open" type="submit" data-t="unlock">Unlock</button>
+    </form>
+    <p id="note" role="status"></p>
+    <script src="i18n.js"></script>
+    <script src="shader.js"></script>
+    <script src="portrait.js"></script>
+    <script src="lock.js"></script>
+  </body>
+</html>

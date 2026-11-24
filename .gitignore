@@ -1,0 +1,18 @@
+# Packed builds; tools/build.py makes them
+store/*.zip
+store/old/
+
+# Not part of the extension
+promo/
+assets/old-soft/
+
+# Local
+node_modules/
+__pycache__/
+.DS_Store
+Thumbs.db
+*.pem
+*.crx
+.env*
+.vscode/
+.idea/

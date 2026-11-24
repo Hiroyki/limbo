@@ -1,0 +1,407 @@
+{
+  "appName": {
+    "message": "Limbo: Pemakan Riwayat"
+  },
+  "appDesc": {
+    "message": "Kasih makan Limbo dengan riwayat browsing kamu. Sekali klik, bisa dibatalkan, dan tanpa izin membaca riwayat."
+  },
+  "actionTitle": {
+    "message": "Limbo: klik untuk hapus, klik kanan untuk memilih"
+  },
+  "rangeAll": {
+    "message": "Semua"
+  },
+  "rangeHour": {
+    "message": "1 jam terakhir"
+  },
+  "rangeToday": {
+    "message": "Hari ini"
+  },
+  "rangeWeek": {
+    "message": "7 hari terakhir"
+  },
+  "menuErase": {
+    "message": "Hapus"
+  },
+  "menuGoogle": {
+    "message": "Riwayat pencarian Google"
+  },
+  "menuSettings": {
+    "message": "Pengaturan dan pratinjau"
+  },
+  "doneAll": {
+    "message": "Riwayat browsing dihapus"
+  },
+  "doneMore": {
+    "message": "Riwayat & lainnya dihapus"
+  },
+  "doneRange": {
+    "message": "$1 dihapus"
+  },
+  "donePreview": {
+    "message": "Cuma pratinjau"
+  },
+  "nothingErased": {
+    "message": "Tidak ada yang dihapus"
+  },
+  "blocked": {
+    "message": "Diblokir Chrome"
+  },
+  "became": {
+    "message": "Limbo jadi $1"
+  },
+  "clickToUndo": {
+    "message": "Klik untuk batal"
+  },
+  "settings": {
+    "message": "Pengaturan"
+  },
+  "justPreview": {
+    "message": "Pratinjau tidak pernah menghapus apa pun."
+  },
+  "previewButton": {
+    "message": "Lihat pratinjau"
+  },
+  "growth": {
+    "message": "Pertumbuhan"
+  },
+  "meals": {
+    "message": "Makan: $1 kali. $2 lagi jadi $3."
+  },
+  "mealsFull": {
+    "message": "Makan: $1 kali. Sudah dewasa."
+  },
+  "optionsTitle": {
+    "message": "Pengaturan Limbo"
+  },
+  "clicking": {
+    "message": "Saat ikon diklik"
+  },
+  "erases": {
+    "message": "Menghapus"
+  },
+  "undoTime": {
+    "message": "Waktu untuk batal"
+  },
+  "seconds": {
+    "message": "$1 detik"
+  },
+  "along": {
+    "message": "Ikut dihapus"
+  },
+  "cache": {
+    "message": "Cache"
+  },
+  "cacheNote": {
+    "message": "Gambar dan file tersimpan. Situs lebih lambat saat pertama dibuka lagi."
+  },
+  "downloads": {
+    "message": "Daftar unduhan"
+  },
+  "downloadsNote": {
+    "message": "Hanya daftarnya. File unduhanmu tetap ada."
+  },
+  "cookies": {
+    "message": "Cookie dan data situs"
+  },
+  "cookiesNote": {
+    "message": "Kamu akan keluar dari sebagian besar situs."
+  },
+  "starts": {
+    "message": "Saat Chrome dibuka"
+  },
+  "auto": {
+    "message": "Hapus otomatis"
+  },
+  "autoNote": {
+    "message": "Berjalan diam-diam dan tidak bisa dibatalkan. Termasuk semua yang dicentang di atas."
+  },
+  "place": {
+    "message": "Penempatan"
+  },
+  "position": {
+    "message": "Posisi"
+  },
+  "size": {
+    "message": "Ukuran"
+  },
+  "small": {
+    "message": "Kecil"
+  },
+  "medium": {
+    "message": "Sedang"
+  },
+  "large": {
+    "message": "Besar"
+  },
+  "tl": {
+    "message": "Kiri atas"
+  },
+  "tr": {
+    "message": "Kanan atas"
+  },
+  "center": {
+    "message": "Tengah"
+  },
+  "bl": {
+    "message": "Kiri bawah"
+  },
+  "br": {
+    "message": "Kanan bawah"
+  },
+  "sound": {
+    "message": "Suara"
+  },
+  "playSound": {
+    "message": "Putar suara"
+  },
+  "soundNote": {
+    "message": "Dengung yang naik, hening sejenak, lalu hantaman."
+  },
+  "volume": {
+    "message": "Volume"
+  },
+  "google": {
+    "message": "Riwayat pencarian Google"
+  },
+  "googleNote": {
+    "message": "Pencarian di akun Google disimpan oleh Google, bukan Chrome. Hanya halaman Google yang bisa menghapusnya, jadi Limbo mengantarmu ke sana: pilih Hapus, lalu Hapus semua."
+  },
+  "googleDelete": {
+    "message": "Hapus pencarian Google"
+  },
+  "googleAuto": {
+    "message": "Atur hapus otomatis"
+  },
+  "googleAfter": {
+    "message": "Antar ke sana setiap selesai menghapus"
+  },
+  "googleAfterNote": {
+    "message": "Membuka halaman Google setelah Limbo selesai."
+  },
+  "shortcut": {
+    "message": "Pintasan"
+  },
+  "changeShortcut": {
+    "message": "Ubah pintasan"
+  },
+  "notSet": {
+    "message": "Belum diatur"
+  },
+  "saved": {
+    "message": "Tersimpan"
+  },
+  "notSaved": {
+    "message": "Gagal menyimpan"
+  },
+  "welcomeTitle": {
+    "message": "Kenalan dengan Limbo"
+  },
+  "welcomeLead": {
+    "message": "Dia memakan riwayat browsing kamu setiap ikonnya diklik."
+  },
+  "welcomePin": {
+    "message": "Biar gampang dijangkau"
+  },
+  "welcomePinNote": {
+    "message": "Klik ikon puzzle di samping kolom alamat Chrome, lalu klik pin di sebelah Limbo."
+  },
+  "welcomeUndo": {
+    "message": "Berubah pikiran?"
+  },
+  "welcomeUndoNote": {
+    "message": "Klik Limbo atau tekan Esc selama garisnya masih berjalan, dan tidak ada yang dihapus."
+  },
+  "welcomePrivacy": {
+    "message": "Tidak ada yang keluar dari komputermu"
+  },
+  "welcomePrivacyNote": {
+    "message": "Limbo tidak punya izin membaca riwayatmu dan tidak mengirim apa pun ke mana pun."
+  },
+  "welcomeTry": {
+    "message": "Coba tanpa menghapus"
+  },
+  "welcomeDone": {
+    "message": "Semua pengaturan"
+  },
+  "menuLock": {
+    "message": "Kunci browser"
+  },
+  "locked": {
+    "message": "Terkunci"
+  },
+  "welcomeBack": {
+    "message": "Selamat datang"
+  },
+  "passcode": {
+    "message": "Kode sandi"
+  },
+  "unlock": {
+    "message": "Buka"
+  },
+  "wrong": {
+    "message": "Kode sandi salah. Lupa? Masukkan kode pemulihan."
+  },
+  "tooMany": {
+    "message": "Terlalu banyak percobaan. Tunggu $1 detik."
+  },
+  "oops": {
+    "message": "Ada yang salah. Coba lagi."
+  },
+  "recovered": {
+    "message": "Kode pemulihan diterima. Kunci sekarang mati."
+  },
+  "isOn": {
+    "message": "Limbo sedang berjaga"
+  },
+  "isOff": {
+    "message": "Buat kode sandi untuk mulai"
+  },
+  "lock": {
+    "message": "Kunci browser"
+  },
+  "lockNote": {
+    "message": "Menyembunyikan semua jendela Chrome sampai kode sandi dimasukkan. Ini menahan orang yang memakai komputermu, tapi tidak menahan orang yang paham cara mengakali ekstensi."
+  },
+  "repeat": {
+    "message": "Ulangi kode sandi"
+  },
+  "turnOn": {
+    "message": "Nyalakan kunci"
+  },
+  "turnOff": {
+    "message": "Matikan kunci"
+  },
+  "saveCode": {
+    "message": "Simpan kode pemulihan ini."
+  },
+  "saveCodeNote": {
+    "message": "Ini jalan masuk kalau kamu lupa kode sandi, dan hanya ditampilkan sekali."
+  },
+  "copy": {
+    "message": "Salin kode"
+  },
+  "savedIt": {
+    "message": "Sudah kusimpan"
+  },
+  "copied": {
+    "message": "Tersalin."
+  },
+  "notCopied": {
+    "message": "Gagal menyalin. Catat saja kodenya."
+  },
+  "lockNow": {
+    "message": "Kunci sekarang"
+  },
+  "onStart": {
+    "message": "Kunci saat Chrome dibuka"
+  },
+  "away": {
+    "message": "Kunci saat aku pergi"
+  },
+  "never": {
+    "message": "Tidak"
+  },
+  "minutes": {
+    "message": "$1 menit"
+  },
+  "mismatch": {
+    "message": "Kedua kode sandi tidak sama."
+  },
+  "tooShort": {
+    "message": "Pakai minimal 4 karakter."
+  },
+  "nowOn": {
+    "message": "Kunci menyala."
+  },
+  "nowOff": {
+    "message": "Kunci mati."
+  },
+  "wrongShort": {
+    "message": "Kode sandi salah."
+  },
+  "unavailable": {
+    "message": "Kunci tidak tersedia. Muat ulang Limbo lalu coba lagi."
+  },
+  "incognito": {
+    "message": "Jendela samaran tidak ikut disembunyikan"
+  },
+  "incognitoNote": {
+    "message": "Nyalakan \"Izinkan dalam mode samaran\" untuk Limbo supaya ikut disembunyikan."
+  },
+  "openDetails": {
+    "message": "Buka detail ekstensi"
+  },
+  "rekey": {
+    "message": "Ganti kode sandi"
+  },
+  "currentPasscode": {
+    "message": "Kode sandi sekarang"
+  },
+  "newPasscode": {
+    "message": "Kode sandi baru"
+  },
+  "rekeyed": {
+    "message": "Kode sandi diganti. Kode pemulihanmu tetap berlaku."
+  },
+  "gone": {
+    "message": "Lenyap"
+  },
+  "spared": {
+    "message": "Selamat"
+  },
+  "failed": {
+    "message": "Gagal"
+  },
+  "welcomeLock": {
+    "message": "Atur Limbo Lock"
+  },
+  "menuLockTab": {
+    "message": "Kunci tab ini saja"
+  },
+  "menuLockSite": {
+    "message": "Kunci situs ini (semua tab)"
+  },
+  "tabLocked": {
+    "message": "Tab ini dikunci"
+  },
+  "tabs": {
+    "message": "Kunci tab"
+  },
+  "tabsNote": {
+    "message": "Klik kanan di halaman lalu pilih Kunci tab ini saja, atau pakai pintasan. Tab lain dari situs yang sama tetap terbuka. Isian yang belum disimpan di halaman itu bisa hilang."
+  },
+  "sites": {
+    "message": "Kunci situs"
+  },
+  "sitesNote": {
+    "message": "Semua tab situs ini meminta kode sandi, dan sekali diisi semuanya terbuka. Klik kanan di halaman lalu pilih Kunci situs ini, atau tambahkan di sini. Chrome akan meminta izin supaya Limbo tahu saat kamu membukanya."
+  },
+  "siteLabel": {
+    "message": "Alamat situs"
+  },
+  "siteAdd": {
+    "message": "Kunci situs"
+  },
+  "siteRemove": {
+    "message": "Hapus"
+  },
+  "siteAllow": {
+    "message": "Izinkan"
+  },
+  "siteBad": {
+    "message": "Masukkan alamat situs, misalnya example.com."
+  },
+  "siteDenied": {
+    "message": "Chrome butuh izinmu untuk mengunci situs itu."
+  },
+  "siteAdded": {
+    "message": "$1 dikunci."
+  },
+  "siteAgain": {
+    "message": "Minta lagi setelah"
+  },
+  "siteUntilClose": {
+    "message": "Chrome ditutup"
+  }
+}

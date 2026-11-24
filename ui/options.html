@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-t="optionsTitle">Limbo settings</title>
+    <link rel="icon" href="../icons/icon32.png">
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <div class="layout">
+      <aside>
+        <div id="hero"></div>
+        <div class="about" data-panel="limbo">
+          <h1 id="level"></h1>
+          <p class="about-line" id="meals"></p>
+          <div id="progress" role="progressbar" data-t-label="growth" aria-valuemin="0" aria-valuemax="100"><i></i></div>
+          <button id="preview" type="button" data-t="previewButton"></button>
+          <p class="hint" data-t="justPreview"></p>
+        </div>
+        <div class="about" data-panel="lock" hidden>
+          <h1>Limbo Lock</h1>
+          <p class="about-line" id="guard"></p>
+        </div>
+      </aside>
+
+      <main>
+        <div class="tabs" role="tablist" data-t-label="optionsTitle">
+          <button type="button" role="tab" id="tab-limbo" aria-controls="panel-limbo">Limbo</button>
+          <button type="button" role="tab" id="tab-lock" aria-controls="panel-lock">Limbo Lock</button>
+        </div>
+
+        <div id="panel-limbo" role="tabpanel" aria-labelledby="tab-limbo" data-panel="limbo">
+        <form id="form" autocomplete="off">
+          <section>
+            <h2 data-t="clicking"></h2>
+            <fieldset>
+              <legend data-t="erases"></legend>
+              <div class="segments" data-radios="range"></div>
+            </fieldset>
+            <fieldset>
+              <legend data-t="undoTime"></legend>
+              <div class="segments" data-radios="undo"></div>
+            </fieldset>
+          </section>
+
+          <section>
+            <h2 data-t="along"></h2>
+            <label class="row">
+              <input type="checkbox" name="cache">
+              <span><b data-t="cache"></b><small data-t="cacheNote"></small></span>
+            </label>
+            <label class="row">
+              <input type="checkbox" name="downloads">
+              <span><b data-t="downloads"></b><small data-t="downloadsNote"></small></span>
+            </label>
+            <label class="row">
+              <input type="checkbox" name="cookies">
+              <span><b data-t="cookies"></b><small class="warn" data-t="cookiesNote"></small></span>
+            </label>
+          </section>
+
+          <section>
+            <h2 data-t="starts"></h2>
+            <label class="row">
+              <input type="checkbox" name="autoErase">
+              <span><b data-t="auto"></b><small data-t="autoNote"></small></span>
+            </label>
+            <fieldset id="autoRange">
+              <legend data-t="erases"></legend>
+              <div class="segments" data-radios="autoRange"></div>
+            </fieldset>
+          </section>
+
+          <section>
+            <h2 data-t="place"></h2>
+            <div class="pair">
+              <fieldset>
+                <legend data-t="position"></legend>
+                <div class="screen" data-radios="corner"></div>
+              </fieldset>
+              <fieldset>
+                <legend data-t="size"></legend>
+                <div class="segments" data-radios="size"></div>
+              </fieldset>
+            </div>
+          </section>
+
+          <section>
+            <h2 data-t="sound"></h2>
+            <label class="row">
+              <input type="checkbox" name="sound">
+              <span><b data-t="playSound"></b><small data-t="soundNote"></small></span>
+            </label>
+            <label class="slider" id="volume">
+              <span data-t="volume"></span>
+              <input type="range" name="volume" min="0" max="100" step="5">
+            </label>
+          </section>
+
+          <section>
+            <h2 data-t="google"></h2>
+            <p class="text" data-t="googleNote"></p>
+            <div class="buttons">
+              <button type="button" data-google="searches" data-t="googleDelete"></button>
+              <button type="button" data-google="controls" data-t="googleAuto"></button>
+            </div>
+            <label class="row">
+              <input type="checkbox" name="googleAfter">
+              <span><b data-t="googleAfter"></b><small data-t="googleAfterNote"></small></span>
+            </label>
+          </section>
+
+          <section>
+            <h2 data-t="shortcut"></h2>
+            <div class="buttons">
+              <kbd data-key="_execute_action"></kbd>
+              <button type="button" data-rebind data-t="changeShortcut"></button>
+            </div>
+          </section>
+        </form>
+        </div>
+
+        <div id="panel-lock" role="tabpanel" aria-labelledby="tab-lock" data-panel="lock" hidden>
+          <section>
+            <h2 data-t="lock"></h2>
+            <p class="text" data-t="lockNote"></p>
+
+            <form id="lock-create" autocomplete="off" hidden>
+              <label class="field"><span data-t="passcode"></span>
+                <input type="password" id="new-passcode" minlength="4" maxlength="200" autocomplete="new-password" required>
+              </label>
+              <label class="field"><span data-t="repeat"></span>
+                <input type="password" id="repeat-passcode" maxlength="200" autocomplete="new-password" required>
+              </label>
+              <button type="submit" data-t="turnOn"></button>
+            </form>
+
+            <div id="lock-code" hidden>
+              <p class="text"><b data-t="saveCode"></b> <span data-t="saveCodeNote"></span></p>
+              <kbd id="code"></kbd>
+              <div class="buttons">
+                <button type="button" id="copy-code" data-t="copy"></button>
+                <button type="button" id="code-saved" data-t="savedIt"></button>
+              </div>
+            </div>
+
+            <div id="lock-on" hidden>
+              <button id="lock-now" class="main" type="button" data-t="lockNow"></button>
+              <label class="row">
+                <input type="checkbox" id="lock-start">
+                <span><b data-t="onStart"></b></span>
+              </label>
+              <fieldset>
+                <legend data-t="away"></legend>
+                <div class="segments" id="lock-idle"></div>
+              </fieldset>
+            </div>
+            <p class="lock-note" id="lock-note" role="status"></p>
+          </section>
+
+          <section data-when-set hidden>
+            <h2 data-t="tabs"></h2>
+            <p class="text" data-t="tabsNote"></p>
+            <div class="buttons">
+              <kbd data-key="lock-tab"></kbd>
+              <button type="button" data-rebind data-t="changeShortcut"></button>
+            </div>
+          </section>
+
+          <section id="sites" data-when-set hidden>
+            <h2 data-t="sites"></h2>
+            <p class="text" data-t="sitesNote"></p>
+            <form id="site-add" class="inline" autocomplete="off">
+              <input type="text" id="site-host" data-t-label="siteLabel" placeholder="example.com" spellcheck="false" autocapitalize="off" maxlength="253" required>
+              <button type="submit" class="main" data-t="siteAdd"></button>
+            </form>
+            <p class="lock-note" id="site-note" role="status"></p>
+            <ul id="site-list"></ul>
+            <fieldset>
+              <legend data-t="siteAgain"></legend>
+              <div class="segments" id="site-minutes"></div>
+            </fieldset>
+          </section>
+
+          <section id="incognito" hidden>
+            <h2 data-t="incognito"></h2>
+            <p class="text" data-t="incognitoNote"></p>
+            <button type="button" id="details" data-t="openDetails"></button>
+          </section>
+
+          <section>
+            <h2 data-t="shortcut"></h2>
+            <div class="buttons">
+              <kbd data-key="lock-browser"></kbd>
+              <button type="button" data-rebind data-t="changeShortcut"></button>
+            </div>
+          </section>
+
+          <section data-when-set hidden>
+            <h2 data-t="rekey"></h2>
+            <form id="lock-rekey" autocomplete="off">
+              <label class="field"><span data-t="currentPasscode"></span>
+                <input type="password" id="rekey-old" maxlength="200" autocomplete="off" required>
+              </label>
+              <label class="field"><span data-t="newPasscode"></span>
+                <input type="password" id="rekey-new" minlength="4" maxlength="200" autocomplete="new-password" required>
+              </label>
+              <label class="field"><span data-t="repeat"></span>
+                <input type="password" id="rekey-repeat" maxlength="200" autocomplete="new-password" required>
+              </label>
+              <button type="submit" data-t="rekey"></button>
+            </form>
+            <p class="lock-note" id="rekey-note" role="status"></p>
+          </section>
+
+          <section data-when-set hidden>
+            <h2 data-t="turnOff"></h2>
+            <form id="lock-remove" autocomplete="off">
+              <label class="field"><span data-t="currentPasscode"></span>
+                <input type="password" id="old-passcode" maxlength="200" autocomplete="off" required>
+              </label>
+              <button type="submit" data-t="turnOff"></button>
+            </form>
+            <p class="lock-note" id="remove-note" role="status"></p>
+          </section>
+        </div>
+        <p id="version"></p>
+      </main>
+    </div>
+    <p id="saved" role="status"></p>
+
+    <script src="../settings.js"></script>
+    <script src="i18n.js"></script>
+    <script src="shader.js"></script>
+    <script src="portrait.js"></script>
+    <script src="options.js"></script>
+    <script src="lock-options.js"></script>
+  </body>
+</html>

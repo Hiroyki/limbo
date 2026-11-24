@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "name": "Limbo test probe",
+  "version": "1.0.0",
+  "description": "Lets the tests count history entries, which Limbo itself cannot do.",
+  "permissions": ["history"],
+  "background": { "service_worker": "probe.js" }
+}

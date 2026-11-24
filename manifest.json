@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_appName__",
+  "short_name": "Limbo",
+  "version": "2.5.0",
+  "description": "__MSG_appDesc__",
+  "default_locale": "en",
+  "minimum_chrome_version": "127",
+  "permissions": ["browsingData", "activeTab", "scripting", "contextMenus", "storage", "offscreen", "idle"],
+  "optional_host_permissions": ["*://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "page": "ui/options.html",
+    "open_in_tab": true
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+Shift+L" }
+    },
+    "lock-browser": {
+      "suggested_key": { "default": "Alt+Shift+K" },
+      "description": "__MSG_menuLock__"
+    },
+    "lock-tab": {
+      "suggested_key": { "default": "Alt+Shift+J" },
+      "description": "__MSG_menuLockTab__"
+    }
+  },
+  "action": {
+    "default_title": "__MSG_actionTitle__",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

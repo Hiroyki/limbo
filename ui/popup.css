@@ -1,0 +1,8 @@
+/* Fallback popup for pages Chrome does not let extensions draw on. */
+html, body {
+  margin: 0;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  background: #0d0c0c;
+}
