@@ -1,24 +1,26 @@
 <div align="center">
 
-<img src="docs/demo.webp" width="380" alt="Limbo draining a page of browsing history, imploding, and ending on the word Gone">
+<p><img src="docs/demo.webp" width="380" alt="Limbo draining a page of browsing history, imploding, and ending on the word Gone"></p>
 
+<p>
 <picture>
 <source media="(prefers-color-scheme: dark)" srcset="docs/h-limbo-dark.webp">
 <img src="docs/h-limbo-light.webp" height="150" alt="Limbo">
 </picture>
+</p>
 
 **A Chrome extension that eats your browsing history.**<br>
 One click to feed it. A few seconds to change your mind.
 
 [![CI](https://github.com/Hiroyki/limbo/actions/workflows/ci.yml/badge.svg)](https://github.com/Hiroyki/limbo/actions/workflows/ci.yml)
 ![Chrome 127 or later](https://img.shields.io/badge/Chrome-127%2B-171413?logo=googlechrome&logoColor=white)
-[![Latest release](https://img.shields.io/github/v/release/Hiroyki/limbo?color=171413&label=release)](https://github.com/Hiroyki/limbo/releases/latest)
-[![Stars](https://img.shields.io/github/stars/Hiroyki/limbo?color=e03a24&label=stars)](https://github.com/Hiroyki/limbo/stargazers)
+[![Latest release](https://img.shields.io/github/v/release/Hiroyki/limbo?color=171413&label=release&cacheSeconds=3600)](https://github.com/Hiroyki/limbo/releases/latest)
+[![Stars](https://img.shields.io/github/stars/Hiroyki/limbo?color=e03a24&label=stars&cacheSeconds=3600)](https://github.com/Hiroyki/limbo/stargazers)
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-171413)
 ![No dependencies](https://img.shields.io/badge/dependencies-none-171413)
 ![No data collected](https://img.shields.io/badge/data_collected-none-e03a24)
 
-[Will you feed it?](#choose) &nbsp;&middot;&nbsp; [How to install](#install) &nbsp;&middot;&nbsp; [Feed it](#feed) &nbsp;&middot;&nbsp; [Watch it grow](#grow) &nbsp;&middot;&nbsp; [Its moods](#moods) &nbsp;&middot;&nbsp; [Limbo Lock](#lock) &nbsp;&middot;&nbsp; [What it can see](#trust) &nbsp;&middot;&nbsp; [Take it apart](#build)
+[Will you feed it?](#choose) &middot; [How to install](#install) &middot; [Feed it](#feed) &middot; [Watch it grow](#grow) &middot; [Its moods](#moods) &middot; [Limbo Lock](#lock) &middot; [What it can see](#trust) &middot; [Take it apart](#build)
 
 <br>
 
