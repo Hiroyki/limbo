@@ -12,12 +12,11 @@
 **A Chrome extension that eats your browsing history.**<br>
 One click to feed it. A few seconds to change your mind.
 
+<img src="docs/badges.webp" height="30" alt="Chrome 127 or later. Manifest V3. No dependencies. No data collected.">
+
 [![CI](https://github.com/Hiroyki/limbo/actions/workflows/ci.yml/badge.svg)](https://github.com/Hiroyki/limbo/actions/workflows/ci.yml)
-![Chrome 127 or later](https://img.shields.io/badge/Chrome-127%2B-171413?logo=googlechrome&logoColor=white)
-[![Latest release](https://img.shields.io/github/v/release/Hiroyki/limbo?color=171413&label=release&cacheSeconds=3600)](https://github.com/Hiroyki/limbo/releases/latest)
-![Manifest V3](https://img.shields.io/badge/Manifest-V3-171413)
-![No dependencies](https://img.shields.io/badge/dependencies-none-171413)
-![No data collected](https://img.shields.io/badge/data_collected-none-e03a24)
+
+**[Download the latest release](https://github.com/Hiroyki/limbo/releases/latest)**
 
 [Will you feed it?](#choose) &middot; [How to install](#install) &middot; [Feed it](#feed) &middot; [Watch it grow](#grow) &middot; [Its moods](#moods) &middot; [Limbo Lock](#lock) &middot; [What it can see](#trust) &middot; [Take it apart](#build)
 
